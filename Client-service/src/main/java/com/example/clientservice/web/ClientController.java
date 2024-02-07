@@ -2,6 +2,7 @@ package com.example.clientservice.web;
 
 import com.example.clientservice.dto.ClientRequest;
 import com.example.clientservice.dto.ClientResponses;
+import com.example.clientservice.publisher.RabbitProducer;
 import com.example.clientservice.service.ClientInterfaceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -13,7 +14,8 @@ import java.util.List;
 public class ClientController {
     @Autowired
     ClientInterfaceService clientServiceImp;
-
+    @Autowired
+    RabbitProducer rabbitProducer;
 
     @GetMapping("/client")
     public List<ClientResponses> getall(){
@@ -42,8 +44,10 @@ public class ClientController {
     }
     @DeleteMapping("/client/{id}")
     public void delete(@PathVariable ("id")Integer id){
-
+        rabbitProducer.envoyerMessage3(id);
         clientServiceImp.supprimer(id);
+        rabbitProducer.envoyerMessage("Client supprimer avec succée");
+
     }
 
 
