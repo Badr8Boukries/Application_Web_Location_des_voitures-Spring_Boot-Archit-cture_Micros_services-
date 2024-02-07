@@ -1,0 +1,26 @@
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/Voiture-service/pom.xml" />
+        <option value="$PROJECT_DIR$/Discovery-service/pom.xml" />
+        <option value="$PROJECT_DIR$/Client-service/pom.xml" />
+        <option value="$PROJECT_DIR$/Location/pom.xml" />
+        <option value="$PROJECT_DIR$/Location-service/pom.xml" />
+        <option value="$PROJECT_DIR$/Gateway-Service/pom.xml" />
+        <option value="$PROJECT_DIR$/Config-Service/pom.xml" />
+        <option value="$PROJECT_DIR$/Location1-service/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/Location/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
