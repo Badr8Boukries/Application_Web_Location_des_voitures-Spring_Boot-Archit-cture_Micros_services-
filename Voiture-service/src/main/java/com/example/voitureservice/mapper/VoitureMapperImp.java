@@ -14,6 +14,8 @@ public class VoitureMapperImp implements VoitureMapper{
         v.setPrix_par_jour(request.getPrix_par_jour());
         v.setModele(request.getModele());
         v.setAnneeFabrication(request.getAnneeFabrication());
+        v.setImagePath(request.getImagePath());
+
 
         return v;
     }
@@ -25,6 +27,9 @@ public class VoitureMapperImp implements VoitureMapper{
         voitureResponse.setMarque(v.getMarque());
         voitureResponse.setPrix_par_jour(v.getPrix_par_jour());
         voitureResponse.setIdV(v.getIdV());
+        voitureResponse.setImagePath(v.getImagePath());
+        voitureResponse.setModele(v.getModele());
+        voitureResponse.setAnneeFabrication(v.getAnneeFabrication());
         return voitureResponse;
     }
 }

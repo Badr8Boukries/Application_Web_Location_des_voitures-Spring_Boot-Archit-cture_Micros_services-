@@ -23,6 +23,7 @@ public class VoitureServiceApplication {
 					.anneeFabrication(2012)
 					.marque("Toyota")
 					.modele("Yariss")
+					.imagePath("assets/R.jpeg")
 					.build();
 			voitureRepository.save(c);
 
@@ -31,7 +32,8 @@ public class VoitureServiceApplication {
 					.prix_par_jour(600)
 					.anneeFabrication(2021)
 					.marque("Mercedes")
-					.modele("Mg")
+					.modele("Amg")
+					.imagePath("assets/mg.jpeg")
 					.build();
 			voitureRepository.save(c2);
 

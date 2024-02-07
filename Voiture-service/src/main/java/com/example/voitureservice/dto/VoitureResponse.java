@@ -14,4 +14,7 @@ public class VoitureResponse {
     private Integer idV;
     private String marque;
     private Integer prix_par_jour;
+    private String modele;
+    private int anneeFabrication;
+    private String imagePath;
 }

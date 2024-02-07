@@ -15,4 +15,6 @@ public class VoitureRequest {
     private String modele;
     private int anneeFabrication;
     private Integer prix_par_jour;
+    private String imagePath;
+
 }

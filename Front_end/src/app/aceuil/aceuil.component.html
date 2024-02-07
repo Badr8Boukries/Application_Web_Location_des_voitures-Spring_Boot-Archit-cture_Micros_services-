@@ -1,0 +1,16 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let voiture of voitures">
+      <div class="card h-100 border-0 shadow-sm">
+        <img [src]="voiture.imagePath" class="card-img-top img-fluid" alt="{{ voiture.marque }}">
+        <div class="card-body">
+          <h5 class="card-title fw-bold text-primary">{{ voiture.marque }}</h5>
+          <p class="card-text mb-1">Modèle: {{ voiture.modele }}</p>
+          <p class="card-text mb-1">Année de fabrication: {{ voiture.anneeFabrication }}</p>
+          <p class="card-text mb-4">Prix par jour: {{ voiture.prix_par_jour }}</p>
+          <a href="#" class="btn btn-primary btn-sm">Réserver</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
